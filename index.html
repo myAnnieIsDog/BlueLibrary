@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Scott Doolittle">
+    <meta name="description" content="This is the html coding lessons version of Yolo Builds.">
+    <link rel="stylesheet" href="inspection.css" type="text/css">
+    <script src="main.js" defer></script>
+    <link rel="icon" href="Yolo Builds.ico" type="image/png">
+    <title>Inspection</title>
+</head>
+<body>
+    <header>
+        <h1>Inspection Requests</h1>
+        
+        <p>This is the tool for building permit inspection requests. If the inspector arrives on site and you are not ready for inspection, a reinspection fee will be charged. If you will not be ready for an inspection, reschedule as soon as possible.</p>
+        <p><a href="https://www.yolocounty.org/government/general-government-departments/community-services/building-inspection-services/inspections">Are you ready to request an inspection?</a></p>
+    </header>
+
+    <main>
+        <h2>General Information</h2>
+        <form>
+            <!-- General permit information  -->
+            <p>
+                <label for="name">What is your name?</label><br>
+                <input type="text" id="name" name="name">
+            </p>
+
+            <p>
+                <label for="email">What is your email address?</label><br>
+                <input type="text" id="email" name="email">
+            </p>
+
+            <p>
+                <label for="phone">What is your phone number?</label><br>
+                <input type="text" id="phone" name="phone">
+            </p>
+            
+            
+            <p>
+                <label for="permit">What permit number is ready for inspection?</label><br>
+                <input type="text" id="permit" name="permit">
+            </p>
+
+            <p>
+                <label for="location">Where is the work located? (address or APN)</label><br>
+                <input type="text" id="location" name="location">
+            </p>
+
+            <p>
+                <label for="description">What is the permit description?</label><br>
+                <input type="text" id="description" name="description">
+            </p>
+
+            <p>
+                <label for="contact">On-site contact name and cell number:</label>
+                <br>
+                <input type="text" id="contact" name="contact">
+            </p>
+
+            <!-- New or Cancellation?  -->
+            <fieldset>
+                <legend>You need to</legend>
+                <div>
+                    <input type="radio" id="new" value="newInspect" name="request">
+                    <label for="new">Request an inspection.</label>
+                </div>
+                <div>
+                    <input type="radio" id="modify" value="cancel" name="request">
+                    <label for="modify">Cancel an inspection request.</label>
+                </div>
+                <!-- Notes  -->
+
+            </fieldset>
+
+            
+
+            <!-- New, When?  -->
+            <fieldset>
+                <legend>Requested Date</legend>
+                <div>
+                    <input type="radio" id="date1" name="reqDate" value="" required />
+                    <label id="date1Lbl" for="date1"></label>
+                </div>
+
+                <div>
+                    <input type="radio" id="date2" name="reqDate" value="" required />
+                    <label id="date2Lbl" for="date2"></label>
+                </div>
+
+                <div>
+                    <input type="radio" id="date3" name="reqDate" value="" required />
+                    <label id="date3Lbl" for="date3"></label>
+                </div>
+
+                <div>
+                    <input type="radio" id="date4" name="reqDate" value="" required />
+                    <label id="date4Lbl" for="date4"></label>
+                </div>
+
+                <div>
+                    <input type="radio" id="date5" name="reqDate" value="" required />
+                    <label id="date5Lbl" for="date5"></label>
+                </div>
+
+                <div>
+                    <input type="radio" id="date6" name="reqDate" value="" required />
+                    <label id="date6Lbl" for="date6"></label>
+                </div>
+
+                <div>
+                    <input type="radio" id="date7" name="reqDate" value="" required />
+                    <label id="date7Lbl" for="date7"></label>
+                </div>
+            </fieldset>
+            <br>
+
+            <h2>Inspection Type</h2>
+
+
+            <!-- New, Category -->
+            <p><label for="IRpermitNo">New Inspection Category (select all that apply)</label><br>
+                <input type="checkbox" id="** Permit Final **" name="IRinspCategory">
+                <label for="** Permit Final **">** Permit Final **</label><br>
+
+                <input type="checkbox" id="Building" name="IRinspCategory">
+                <label for="Building">Building</label><br>
+
+                <input type="checkbox" id="Demolition" name="IRinspCategory">
+                <label for="Demolition">Demolition</label><br>
+
+                <input type="checkbox" id="Electrical" name="IRinspCategory">
+                <label for="Electrical">Electrical</label><br>
+
+                <input type="checkbox" id="Grading" name="IRinspCategory">
+                <label for="Grading">Grading</label><br>
+
+                <input type="checkbox" id="Mechanical" name="IRinspCategory">
+                <label for="Mechanical">Electrical</label><br>
+
+                <input type="checkbox" id="Plumbing" name="IRinspCategory">
+                <label for="Plumbing">Plumbing</label><br>
+
+                <input type="checkbox" id="Pool/Spa" name="IRinspCategory">
+                <label for="Pool/Spa">Pool/Spa</label>
+            </p>
+
+            <fieldset> <!-- Building -->
+                <legend>Building</legend>
+                
+                <div>
+                    <input type="radio" id="date1" name="reqDate" value="Demo 1 Pre-Measure" required />
+                    <label id="date1Lbl" for="date1">Pre-Measure and Utility Disconnection</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="date2" name="reqDate" value="Demo 2 Final" required />
+                    <label id="date2Lbl" for="date2">Final</label>
+                </div>
+            </fieldset>
+
+
+            <fieldset> <!-- Demolition -->
+                <legend>Demolition</legend>
+                
+                <div>
+                    <input type="radio" id="date1" name="reqDate" value="Demo 1 Pre-Measure" required />
+                    <label id="date1Lbl" for="date1">Pre-Measure and Utility Disconnection</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="date2" name="reqDate" value="Demo 2 Final" required />
+                    <label id="date2Lbl" for="date2">Final</label>
+                </div>
+            </fieldset>
+
+            <fieldset> <!-- Electrical -->
+                <legend>Electrical</legend>
+                <div>
+                    <input type="radio" id="elcBond" name="Electrical" value="Bonding" required />
+                    <label id="elcBondLbl" for="elcBond">Bonding</label>
+                </div>
+                <div>
+                    <input type="radio" id="elcFinal" name="Electrical" value="Final" required />
+                    <label id="elcFinalLbl" for="elcFinal">Final</label>
+                </div>
+                <div>
+                    <input type="radio" id="elcGround" name="Electrical" value="Ground" required />
+                    <label id="elcGroundLbl" for="elcGround">Grounding Electrode System (UFER, Ground Rod, etc.)</label>
+                </div>
+                <div>
+                    <input type="radio" id="elcMeter" name="Electrical" value="Meter Release" required />
+                    <label id="elcMeterLbl" for="elcMeter">Meter Release</label>
+                </div>
+                <div>
+                    <input type="radio" id="elcRough" name="Electrical" value="Rough" required />
+                    <label id="elcRoughLbl" for="elcRough">Rough</label>
+                </div>
+                <div>
+                    <input type="radio" id="elcPV" name="Electrical" value="Solar Equipment" required />
+                    <label id="elcPVLbl" for="elcPV">Solar Equipment</label>
+                </div>
+                <div>
+                    <input type="radio" id="elcSubPanel" name="Electrical" value="Subpanel-Switchgear" required />
+                    <label id="elcSubPanelLbl" for="elcSubPanel">Subpanel / Switchgear</label>
+                </div>
+                <div>
+                    <input type="radio" id="elcUgConduit" name="Electrical" value="Underground Conduit" required />
+                    <label id="elcUgConduitLbl" for="elcUgConduit">Underground Conduit</label>
+                </div>
+                <div>
+                    <input type="radio" id="elcOther" name="Electrical" value="Other" required />
+                    <label id="elcOtherLbl" for="elcOther">Other</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset> <!-- Fire -->
+                <legend>Fire</legend>
+                
+
+            </fieldset>
+
+            <fieldset> <!-- Flood -->
+                <legend>Flood</legend>
+                
+                <div>
+                    <input type="radio" id="flood1.1" name="reqDate" value="Flood Materials" required />
+                    <label id="flood1.1Lbl" for="flood1.1">Materials: Flood-Damage Resistant</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="flood1.1" name="reqDate" value="Flood Materials" required />
+                    <label id="flood1.1Lbl" for="flood1.1">Anchoring: Incl. Bouyant Forces</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="flood1.1" name="reqDate" value="Flood Materials" required />
+                    <label id="flood1.1Lbl" for="flood1.1">Drainage: No Adverse Impact</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="flood2" name="reqDate" value="Flood EC2 Lowest Floor" required />
+                    <label id="flood2Lbl" for="flood2">Elevation Certificate 2: Lowest Floor Elevation</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="flood3" name="reqDate" value="Flood EC3 Final" required />
+                    <label id="flood3Lbl" for="flood3">Elevation Certificate 3: Final</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="flood1.2" name="reqDate" value="Flood Utilities" required />
+                    <label id="flood1.2Lbl" for="flood1.2">Utilities: Elevated or Floodproof</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="flood1.2" name="reqDate" value="Flood Venting" required />
+                    <label id="flood1.2Lbl" for="flood1.2">Venting: One Square Inch per Square Foot</label>
+                </div>
+            </fieldset>
+
+            <fieldset> <!-- Grading -->
+                <legend>Grading</legend>
+                
+                <div>
+                    <input type="radio" id="grade1" name="grading" value="Grading 1 Site Prep" required />
+                    <label id="grade1Lbl" for="grade1">Site Prep</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="grade2" name="grading" value="Grading 2 Lifts" required />
+                    <label id="grade2Lbl" for="grade2">Lifts</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="grade3" name="grading" value="Grading 3 Final" required />
+                    <label id="grade3Lbl" for="grade3">Final</label>
+                </div>
+            </fieldset>
+
+            <fieldset> <!-- Manufactured Home -->
+                <legend>Manufactured Home</legend>
+                
+                <div>
+                    <input type="radio" id="MhFound" name="Manufactured Home" value="Foundation" required />
+                    <label id="MhFoundLbl" for="MhFound">Foundation System</label>
+                </div>
+                <div>
+                    <input type="radio" id="MhSetup" name="Manufactured Home" value="Setup" required />
+                    <label id="MhSetupLbl" for="MhSetup">Setup, Marriage and Continuity</label>
+                </div>
+                <div>
+                    <input type="radio" id="MhFinal" name="Manufactured Home" value="Final" required />
+                    <label id="MhFinalLbl" for="MhFinal">Final, Verify Insignia and Serial Number</label>
+                </div>
+            </fieldset>
+
+            <fieldset> <!-- Mechanical -->
+                <legend>Mechanical</legend>
+                
+                <div>
+                    <input type="radio" id="mchHood" name="Mechanical" value="Hood" required />
+                    <label id="mchHoodLbl" for="mchHood">Commercial Kitchen Hood Type I</label>
+                </div>
+                <div>
+                    <input type="radio" id="mchFinal" name="Mechanical" value="Final" required />
+                    <label id="mchFinalLbl" for="mchFinal">Final</label>
+                </div>
+                <div>
+                    <input type="radio" id="mchHVAC" name="Mechanical" value="HVAC" required />
+                    <label id="mchHVACLbl" for="mchHVAC">HVAC Replacement</label>
+                </div>
+                <div>
+                    <input type="radio" id="mchOther" name="Mechanical" value="Other" required />
+                    <label id="mchOtherLbl" for="mchOther">Other</label>
+                </div>
+                <div>
+                    <input type="radio" id="mchFinal" name="Mechanical" value="Final" required />
+                    <label id="mchFinalLbl" for="mchFinal">Final</label>
+                </div>
+            </fieldset>
+
+            <fieldset> <!-- Plumbing -->
+                <legend>Plumbing</legend>
+                
+                <div>
+                    <input type="checkbox" id="plbFinal" name="Plumbing" value="Final" required />
+                    <label id="plbFinalLbl" for="plbFinal">Final</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbGasRel" name="Plumbing" value="Gas Meter Release" required />
+                    <label id="plbGasRelLbl" for="plbGasRel">Gas Meter Release</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbGasTest" name="Plumbing" value="Gas Pressure Test" required />
+                    <label id="plbGasTestLbl" for="plbGasTest">Gas Pressure Test</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbGround" name="Plumbing" value="Ground Plumbing" required />
+                    <label id="plbGroundLbl" for="plbGround">Ground Plumbing</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbRough" name="Plumbing" value="Rough Plumbing" required />
+                    <label id="plbRoughLbl" for="plbRough">Rough Plumbing</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbSewerService" name="Plumbing" value="SewerService" required />
+                    <label id="plbSewerServiceLbl" for="plbSewerService">Sewer Service</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbShower" name="Plumbing" value="Shower Pan" required />
+                    <label id="plbShowerLbl" for="plbShower">Shower Pan</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbUnderFloor" name="Plumbing" value="Underfloor" required />
+                    <label id="plbUnderFloorLbl" for="plbUnderFloor">Underfloor</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbWaterHeater" name="Plumbing" value="WaterHeater" required />
+                    <label id="plbWaterHeaterLbl" for="plbWaterHeater">Water Heater Replacement</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbWaterService" name="Plumbing" value="WaterService" required />
+                    <label id="plbWaterServiceLbl" for="plbWaterService">Water Service</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plbOther" name="Plumbing" value="Other" required />
+                    <label id="plbOtherLbl" for="plbOther">Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset> <!-- Pool/Spa -->
+                <legend>Pool/Spa</legend>
+                <div>
+                    <input type="radio" id="pool0" name="Pool/Spa" value="Hot Tub" required />
+                    <label id="pool0Lbl" for="pool0">Hot Tub</label>
+                </div>
+                <div>
+                    <input type="radio" id="pool1" name="Pool/Spa" value="1 Pre-Gunite" required />
+                    <label id="pool1Lbl" for="pool1">Pre-Gunite, Bonding, Underground Conduit, and Gas Test</label>
+                </div>
+                <div>
+                    <input type="radio" id="pool2" name="Pool/Spa" value="2 Pre-Deck" required />
+                    <label id="pool2Lbl" for="pool2">Pre-Deck and Bonding</label>
+                </div>
+                <div>
+                    <input type="radio" id="pool3" name="Pool/Spa" value="3 Pre-Plaster and Safety Barriers" required />
+                    <label id="pool3Lbl" for="pool3">Pre-Plaster and Drowning Prevention Safety Devices</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="modDetail">Notes:</label><br>
+                <input class="wide" type="text" id="modDetail" name="modDetail">
+            </div>
+
+            <!-- Back, Save, or Submit Form -->
+            <p><input type="button" onclick="alert(formSubmit)" value="Submit Request"></p>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2023 Scott Doolittle
+    </footer>
+</body>
+</html>
