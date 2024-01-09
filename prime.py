@@ -6,7 +6,7 @@ def run():
             n = int(input("What number would you like to test?\n"))
             if type(n) != int or n < 2:
                 raise Exception
-            result = (f"{n} is {"prime." if is_prime(n) else "not prime"}")
+            result = (f"{n} is {'prime.' if is_prime(n) else 'not prime'}")
             break
         except:
             print("\nYou must enter a positive integer")
@@ -26,6 +26,13 @@ def is_prime(number: int) -> bool:
 
     return not any(not number % i for i in odd_numbers)
     # from https://github.com/TheAlgorithms/Python/ (I forgot which file)
+
+def list_primes(n):
+    primes = []
+    for i in range(n):
+        if is_prime(i):
+            primes.append(i)
+    return primes
 
 if __name__ == '__main__':
     run()

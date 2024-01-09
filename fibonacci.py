@@ -1,7 +1,7 @@
 import math
 
 def run():
-    seq = fibonacci(100)
+    seq = fibonacci(10)
     for i in seq:
         print(i)
 
