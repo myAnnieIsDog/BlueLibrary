@@ -1,17 +1,15 @@
-import math
-
 def run():
-    seq = fibonacci(10)
+    n = 8 
+    seq = fibonacci(n)
     for i in seq:
         print(i)
 
 def fibonacci(n):
     a = 0
     b = 1
-    sequence = [a, b]
-    
+    sequence = [a, b]  
     if n < 1:
-        return [0]   
+        return [0]
     if n == 1 :
         return sequence
     
@@ -22,7 +20,6 @@ def fibonacci(n):
         b = c
     
     return sequence
-
 
 if __name__ == '__main__':
     run()

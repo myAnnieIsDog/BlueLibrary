@@ -13,7 +13,6 @@ def run():
             continue
     print(result)
 
-
 def is_prime(number: int) -> bool:
     if number < 2:
         return False
