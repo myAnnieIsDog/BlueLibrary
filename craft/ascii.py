@@ -1,19 +1,29 @@
 def run():
-    '''print()
+    """print()
     for i in ascii_meta():
-        print(i)'''
-    
-    print()
-    for i in ascii_list():
-        print(i, end="")
+        print(i)"""
+
+    alpha()
+
+    # for i in ascii_list():
+    #     print(i, end="")
+
+
+all = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+
+
+def alpha():
+    for i in all:
+        if i.isalpha():
+            print(i, end="")
 
 
 def ascii_list(start=32, end=127):
     ascii = []
 
-    if not((start < end) and (32 <= start) and (end <= 127)):
+    if not ((start < end) and (32 <= start) and (end <= 127)):
         raise ValueError
-    
+
     for i in range(start, end):
         ascii.append(chr(i))
     return ascii
@@ -23,9 +33,9 @@ def ascii_meta(start=32, end=127):
     map = {}
     meta_list = []
 
-    if not((start < end) and (32 <= start) and (end <= 127)):
+    if not ((start < end) and (32 <= start) and (end <= 127)):
         raise ValueError
-    
+
     for i in range(start, end):
         map[str(i).zfill(3)] = chr(i)
 
